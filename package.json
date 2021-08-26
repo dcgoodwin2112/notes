@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dcgoodwin2112/notes/issues"
   },
-  "homepage": "https://github.com/dcgoodwin2112/notes#readme"
+  "homepage": "https://github.com/dcgoodwin2112/notes#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
