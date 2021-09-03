@@ -23,5 +23,8 @@
   "homepage": "https://github.com/dcgoodwin2112/notes#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "clean-css": "^5.1.5"
   }
 }

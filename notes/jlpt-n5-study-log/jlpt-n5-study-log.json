@@ -1,0 +1,5 @@
+{
+  "collectionHome": "/notes/jlpt-n5-study-log/",
+  "tags": ["language", "japanese", "日本語", "jlpt", "n5"],
+  "layout": "layouts/notes.njk"
+}

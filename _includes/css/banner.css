@@ -1,0 +1,18 @@
+.banner {
+  background-color: black;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 12px 0;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}

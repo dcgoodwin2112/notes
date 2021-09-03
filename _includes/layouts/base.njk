@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    {% set css %}
+      {% include "css/reset.css" %}
+      {% include "css/layout.css" %}
+      {% include "css/elements.css" %}
+      {% include "css/banner.css" %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    <div class="site-container">
+      {% include "partials/banner.njk" %}
+      {% block pageTop %}{% endblock %}
+      {% block main %}
+        <main>
+          {{ content | safe }}
+        </main>
+      {% endblock %}
+       {% block pageBottom %}{% endblock %}
+      <footer></footer>
+    </div>
+  </body>
+</html>

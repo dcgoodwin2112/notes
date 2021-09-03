@@ -1,0 +1,21 @@
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner > div {
+  max-width: 800px;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+}
