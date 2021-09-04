@@ -33,7 +33,7 @@ p {
 dl > div {
   padding: 1rem 0;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 dl > div:nth-child(odd) {
@@ -50,4 +50,8 @@ dl > div dt {
 dt {
   font-weight: 400;
   font-size: 1.24rem;
+}
+
+dt, dd {
+  line-height: 2.75rem;
 }
