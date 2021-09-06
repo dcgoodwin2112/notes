@@ -24,8 +24,10 @@
           {{ content | safe }}
         </main>
       {% endblock %}
-       {% block pageBottom %}{% endblock %}
-      <footer></footer>
+      {% block pageBottom %}{% endblock %}
+      <footer>
+        {% block footer %}{% endblock %}
+      </footer>
     </div>
   </body>
 </html>

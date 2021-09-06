@@ -1,15 +1,21 @@
-{% set collectionHome = collections.jlptN5 | getCollectionHome(page) %}
-{% if collectionHome %}
-  <a href="{{collectionHome}}">View all notes in this Collection</a>
-{% endif %}
+<nav aria-label="study log navigation" class="note-nav">
+  {% set collectionHome = collections.jlptN5 | getCollectionHome(page) %}
+  {% if collectionHome %}
+    <a href="{{collectionHome}}">View all notes in this Collection</a>
+  {% endif %}
 
-{% set previousPost = collections.jlptN5 | getPreviousCollectionItem(page) %}
-{% if previousPost %}
-  <a href="{{previousPost.url}}">Previous ({{previousPost.fileSlug}})</a>
-{% endif %}
 
-{% set nextPost = collections.jlptN5 | getNextCollectionItem(page) %}
-{% if nextPost %}
-  <a href="{{nextPost.url}}">Next ({{nextPost.fileSlug}})</a>
-{% endif %}
+  {% set previousPost = collections.jlptN5 | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.jlptN5 | getNextCollectionItem(page) %}
+
+  <div class="prev-next">
+  {% if previousPost %}
+    <a href="{{previousPost.url}}" class="prev">Previous ({{previousPost.fileSlug}})</a>
+  {% endif %}
+
+  {% if nextPost %}
+    <a href="{{nextPost.url}}" class="next">Next ({{nextPost.fileSlug}})</a>
+  {% endif %}
+  </div>
+</nav>
 

@@ -30,6 +30,20 @@ p {
   margin: .75rem 0;
 }
 
+a,
+a:visited {
+  color: indigo;
+}
+
+a:hover {
+  color: darkorchid;
+  text-decoration: none;
+}
+
+dl {
+  padding: 1rem 0;
+}
+
 dl > div {
   padding: 1rem 0;
   display: grid;
@@ -54,4 +68,24 @@ dt {
 
 dt, dd {
   line-height: 2.75rem;
+}
+
+.note-nav {
+  text-align: center;
+  padding: 12px;
+}
+
+.note-nav a,
+.note-nav a:visited {
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+.prev-next {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.next {
+  grid-column: 2;
 }
